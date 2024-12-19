@@ -2,13 +2,14 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "wiseqingyang",
-  description: "wiseqingyang's blog",
+  lang: 'zh-cn',
+  title: "亦枫的笔记",
+  description: "这里是亦枫的所有笔记。",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'AllPosts', link: '/all-posts' }
     ],
 
     sidebar: [
@@ -24,5 +25,10 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ]
+  },
+  vite: {
+    server: {
+      port: 1234
+    }
   }
 })

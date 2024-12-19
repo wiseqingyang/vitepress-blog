@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/vitepress-blog/',
   lang: 'zh-cn',
   title: "亦枫的笔记",
   description: "这里是亦枫的所有笔记。",
